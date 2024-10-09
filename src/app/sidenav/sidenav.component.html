@@ -1,22 +1,7 @@
 <h3 class="text-center">Sidenav</h3>
 <hr class=" text-primary  ">
 <ul class="list-group">
-    <li class="list-group-item">
-        Productos
-    </li>
-    <li class="list-group-item">
-        Usuarios
-    </li>
-    <li class="list-group-item">
-        Plataforma
-    </li>
-    <li class="list-group-item">
-        Reportes
-    </li>
-    <li class="list-group-item">
-        Configuracion
-    </li>
-    <li class="list-group-item">
-        Cerrar sesion
+    <li class="list-group-item" *ngFor="let componente of componentes">
+        {{ componente.name }}
     </li>
 </ul>

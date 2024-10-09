@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { NavItem } from '../interfaces/components.interface';
 
 @Component({
   selector: 'app-sidenav',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class SidenavComponent {
+  @Input()
+  public componentes: NavItem[] = [];
 
+  
 }
