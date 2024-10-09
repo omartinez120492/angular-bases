@@ -4,7 +4,7 @@ import { NavItem } from '../interfaces/components.interface';
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',
-  styles: ``
+  styleUrls: ['./sidenav.component.css']
 })
 export class SidenavComponent {
   @Input()
