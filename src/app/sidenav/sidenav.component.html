@@ -1,7 +1,22 @@
-<h3 class="text-center " >Sidenav</h3>
-<hr class=" text-primary  ">
+<h3 class="text-center">Sidenav</h3>
+<hr class=" text-primary">
+
+<div 
+  class="alert" 
+  [ngClass]="{'alert-success': loading, 
+  'alert-danger': !loading, 
+  'alert-warning': loading == null}"  role="alert">
+  {{ loading }}
+</div>
+
 <ul class="list-group sidenav">
-    <li class="list-group-item" *ngFor="let componente of componentes">
+    <li class="list-group-item"  *ngFor="let componente of componentes">
         {{ componente.name }}
     </li>
 </ul>
+
+
+
+<button class="btn btn-primary" (click)="changeLoading()"  >
+  Change
+</button>

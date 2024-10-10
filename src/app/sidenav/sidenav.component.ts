@@ -10,5 +10,12 @@ export class SidenavComponent {
   @Input()
   public componentes: NavItem[] = [];
 
-  
+  public loading: boolean = true;
+
+  public changeLoading(): void {
+    this.loading = !this.loading;
+    console.log({ loading: this.loading });
+  }
 }
+
+
