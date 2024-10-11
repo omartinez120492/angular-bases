@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ProductosComponent } from './productos/productos.component';
 import { UsersComponent } from './users/users.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { FormsModule } from '@angular/forms';
+import { FormsComponent } from './forms/forms.component';
 
 
 @NgModule({
@@ -14,10 +16,12 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     ProductosComponent,
     UsersComponent,
     SidenavComponent,
+    FormsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

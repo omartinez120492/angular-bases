@@ -1,0 +1,19 @@
+<h3>Datos del usuario</h3>
+<hr class=" text-primary ">
+
+<form (ngSubmit)="saveMyUser()">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" id="nombre" class="form-control" [(ngModel)]="user.nombre" name="nombre">
+    <label for="apellido" class="form-label">Apellido</label>
+    <input type="text" id="apellido" class="form-control" [(ngModel)]="user.apellido" name="apellido">  
+    <label for="direccion" class="form-label">Direccion</label>
+    <input type="text" id="direccion" class="form-control" [(ngModel)]="user.direccion" name="direccion">
+    <label for="telefono" class="form-label">Telefono</label>
+    <input type="number" id="telefono" class="form-control" [(ngModel)]="user.telefono" name="telefono">
+    <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary mt-3">
+            Guardar
+        </button>
+    </div>
+</form>
+<code>{{user | json}}</code>
